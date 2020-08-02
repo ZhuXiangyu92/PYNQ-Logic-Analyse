@@ -2,9 +2,7 @@
 A Simple Logic Analyse based on pynq-z2
 
 一个基于PYNQ Z2的简易逻辑分析仪。
-      logic-fpga-sim   //FPGA触发采样电路仿真工程
-      pynq-src  //pynq 文件
-      vivado-project   //逻辑分析仪PL(FPGA)部分工程
+
 
 功能，参数：
 
