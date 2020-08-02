@@ -3,6 +3,9 @@ A Simple Logic Analyse based on pynq-z2
 
 一个基于PYNQ Z2的简易逻辑分析仪。
 
+源码目录：
+logic-fpga-sim 采样触发RTL模块的仿真工程
+vivado-project 完整工程的PL部分，TCL脚本和源码。
 
 功能，参数：
 
