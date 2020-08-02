@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jul 28 01:01:26 2020
+# Process ID: 24508
+# Current directory: D:/summer-camp/logic-analyse/hardware_input
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19988 D:\summer-camp\logic-analyse\hardware_input\hardware_input.xpr
+# Log file: D:/summer-camp/logic-analyse/hardware_input/vivado.log
+# Journal file: D:/summer-camp/logic-analyse/hardware_input\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/summer-camp/logic-analyse/hardware_input/hardware_input.xpr
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells blk_mem_gen_0]
+create_bd_cell -type module -reference intern_clk intern_clk_0
+delete_bd_objs [get_bd_cells intern_clk_0]
+create_bd_cell -type module -reference logic_in logic_in_0
+set_property location {0.5 -176 -133} [get_bd_cells logic_in_0]
+delete_bd_objs [get_bd_cells logic_in_0]
+create_bd_cell -type module -reference logic_in logic_in_0
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_cells logic_in_0]
+report_ip_status -name ip_status 

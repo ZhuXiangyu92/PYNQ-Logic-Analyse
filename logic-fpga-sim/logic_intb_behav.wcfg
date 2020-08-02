@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="logic_intb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="logic_intb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="331177548fs"></ZoomEndTime>
+      <Cursor1Time time="400000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="162"></NameColumnWidth>
+      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/logic_intb/clk_in" type="logic">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/logic_in_0/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/clk_ext" type="logic">
+      <obj_property name="ElementShortName">clk_ext</obj_property>
+      <obj_property name="ObjectShortName">clk_ext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/clk_sel" type="logic">
+      <obj_property name="ElementShortName">clk_sel</obj_property>
+      <obj_property name="ObjectShortName">clk_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/trig_state_0" type="logic">
+      <obj_property name="ElementShortName">trig_state_0</obj_property>
+      <obj_property name="ObjectShortName">trig_state_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/logic_in_0/bramdata" type="array">
+      <obj_property name="ElementShortName">bramdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bramdata[31:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/blk_mem_gen_0/addra" type="array">
+      <obj_property name="ElementShortName">addra[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/depth" type="array">
+      <obj_property name="ElementShortName">depth[15:0]</obj_property>
+      <obj_property name="ObjectShortName">depth[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/mode" type="array">
+      <obj_property name="ElementShortName">mode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">mode[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/doutb_0" type="array">
+      <obj_property name="ElementShortName">doutb_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb_0[31:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/test_ram_0/address" type="array">
+      <obj_property name="ElementShortName">address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/test_ram_0/inst/enr" type="logic">
+      <obj_property name="ElementShortName">enr</obj_property>
+      <obj_property name="ObjectShortName">enr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/test_ram_0/inst/enb" type="logic">
+      <obj_property name="ElementShortName">enb</obj_property>
+      <obj_property name="ObjectShortName">enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/blk_mem_gen_0/ena" type="logic">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/blk_mem_gen_0/web" type="array">
+      <obj_property name="ElementShortName">web[3:0]</obj_property>
+      <obj_property name="ObjectShortName">web[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/blk_mem_gen_0/wea" type="array">
+      <obj_property name="ElementShortName">wea[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/finish_0" type="logic">
+      <obj_property name="ElementShortName">finish_0</obj_property>
+      <obj_property name="ObjectShortName">finish_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/trig_state_0" type="logic">
+      <obj_property name="ElementShortName">trig_state_0</obj_property>
+      <obj_property name="ObjectShortName">trig_state_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/trig_word" type="array">
+      <obj_property name="ElementShortName">trig_word[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_word[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/logic_in_0/inst/trigger/trigger" type="logic">
+      <obj_property name="ElementShortName">trigger</obj_property>
+      <obj_property name="ObjectShortName">trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/logic_in_0/inst/trigger/trig_mode" type="array">
+      <obj_property name="ElementShortName">trig_mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/logic_in_0/inst/trigger/input_data" type="array">
+      <obj_property name="ElementShortName">input_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">input_data[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/logic_in_0/inst/trigger/pos_trig" type="logic">
+      <obj_property name="ElementShortName">pos_trig</obj_property>
+      <obj_property name="ObjectShortName">pos_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/logic_in_0/inst/trigger/neg_trig" type="logic">
+      <obj_property name="ElementShortName">neg_trig</obj_property>
+      <obj_property name="ObjectShortName">neg_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/logic_in_0/inst/trigger/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/logic_in_0/inst/trigger/lock" type="logic">
+      <obj_property name="ElementShortName">lock</obj_property>
+      <obj_property name="ObjectShortName">lock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/logic_in_0/inst/trigger/temp_state" type="logic">
+      <obj_property name="ElementShortName">temp_state</obj_property>
+      <obj_property name="ObjectShortName">temp_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_intb/in_module/design_1_i/logic_in_0/inst/trigger/sys_valid" type="logic">
+      <obj_property name="ElementShortName">sys_valid</obj_property>
+      <obj_property name="ObjectShortName">sys_valid</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,43 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot logic_intb_func_synth xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module unisims_ver.RAMB36E1(READ_WIDTH_A=18,READ_WI...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.design_1_logic_in_0_0_intern_clk
+Compiling module xil_defaultlib.design_1_logic_in_0_0_logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.design_1_test_ram_0_0_test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module unisims_ver.OBUF
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_func_synth

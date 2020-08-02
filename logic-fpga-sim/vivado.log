@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Aug  2 15:42:48 2020
+# Process ID: 17172
+# Current directory: F:/localgit/PYNQ-Logic-Analyse/logic-fpga-sim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15028 F:\localgit\PYNQ-Logic-Analyse\logic-fpga-sim\hardware_input.xpr
+# Log file: F:/localgit/PYNQ-Logic-Analyse/logic-fpga-sim/vivado.log
+# Journal file: F:/localgit/PYNQ-Logic-Analyse/logic-fpga-sim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/localgit/PYNQ-Logic-Analyse/logic-fpga-sim/hardware_input.xpr
+INFO: [Project 1-313] Project file moved from 'D:/summer-camp/logic-analyse/hardware_input' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'F:/localgit/PYNQ-Logic-Analyse/ip_repo/logic_input_1.0'; using path 'D:/summer-camp/logic-analyse/ip_repo/logic_input_1.0' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer-camp/logic-analyse/ip_repo/logic_input_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 730.148 ; gain = 99.078
+update_module_reference design_1_logic_in_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ext_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'ext_clk': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'sys_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer-camp/logic-analyse/ip_repo/logic_input_1.0'.
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:module_ref:logic_in:1.0 - logic_in_0
+Adding cell -- xilinx.com:module_ref:test_ram:1.0 - test_ram_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramrst(undef) and /blk_mem_gen_0/rsta(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramrst(undef) and /blk_mem_gen_0/rstb(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramclk(undef) and /blk_mem_gen_0/clka(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramclk(undef) and /blk_mem_gen_0/clkb(clk)
+Successfully read diagram <design_1> from BD file <F:/localgit/PYNQ-Logic-Analyse/logic-fpga-sim/hardware_input.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'F:/localgit/PYNQ-Logic-Analyse/logic-fpga-sim/hardware_input.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_logic_in_0_0 from logic_in_v1_0 1.0 to logic_in_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/rsta(rst) and /logic_in_0_upgraded_ipi/bramrst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/rstb(rst) and /logic_in_0_upgraded_ipi/bramrst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/clka(clk) and /logic_in_0_upgraded_ipi/bramclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/clkb(clk) and /logic_in_0_upgraded_ipi/bramclk(undef)
+Wrote  : <F:\localgit\PYNQ-Logic-Analyse\logic-fpga-sim\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/localgit/PYNQ-Logic-Analyse/logic-fpga-sim/hardware_input.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+upgrade_ip: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 878.164 ; gain = 97.090
+update_module_reference: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 878.164 ; gain = 97.090
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  2 15:43:29 2020...

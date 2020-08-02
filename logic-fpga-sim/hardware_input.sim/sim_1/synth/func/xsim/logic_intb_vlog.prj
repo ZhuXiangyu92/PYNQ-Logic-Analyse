@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"logic_intb_func_synth.v" \
+"../../../../../hardware_input.srcs/sim_1/new/logic_intb.v" \
+
+# Do not sort compile order
+nosort

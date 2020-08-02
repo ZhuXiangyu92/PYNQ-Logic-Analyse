@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jul 28 00:47:29 2020
+# Process ID: 5264
+# Current directory: D:/summer-camp/logic-analyse/hardware_input
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30184 D:\summer-camp\logic-analyse\hardware_input\hardware_input.xpr
+# Log file: D:/summer-camp/logic-analyse/hardware_input/vivado.log
+# Journal file: D:/summer-camp/logic-analyse/hardware_input\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/summer-camp/logic-analyse/hardware_input/hardware_input.xpr
+update_compile_order -fileset sources_1
+create_peripheral xilinx.com user logic_input 1.0 -dir D:/summer-camp/logic-analyse/hardware_input/../ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:logic_input:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:logic_input:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:logic_input:1.0]
+set_property  ip_repo_paths  D:/summer-camp/logic-analyse/hardware_input/../ip_repo/logic_input_1.0 [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name logic_input_v1_0_project -directory D:/summer-camp/logic-analyse/hardware_input/hardware_input.tmp/logic_input_v1_0_project d:/summer-camp/logic-analyse/ip_repo/logic_input_1.0/component.xml
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to d:/summer-camp/logic-analyse/ip_repo/logic_input_1.0/src {D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/src/intern_clk.v D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/src/logic_in.v}
+update_compile_order -fileset sources_1
+close_project
+update_ip_catalog -delete_ip xilinx.com:user:logic_input:1.0 -repo_path d:/summer-camp/logic-analyse/ip_repo/logic_input_1.0

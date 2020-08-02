@@ -1,0 +1,1150 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jul 28 10:22:43 2020
+# Process ID: 20984
+# Current directory: D:/summer-camp/logic-analyse/hardware_input
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28324 D:\summer-camp\logic-analyse\hardware_input\hardware_input.xpr
+# Log file: D:/summer-camp/logic-analyse/hardware_input/vivado.log
+# Journal file: D:/summer-camp/logic-analyse/hardware_input\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/summer-camp/logic-analyse/hardware_input/hardware_input.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer-camp/logic-analyse/ip_repo/logic_input_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 754.684 ; gain = 136.914
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 12
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramrst(undef) and /blk_mem_gen_0/rsta(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramrst(undef) and /blk_mem_gen_0/rstb(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramclk(undef) and /blk_mem_gen_0/clka(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramclk(undef) and /blk_mem_gen_0/clkb(clk)
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+WARNING: [BD 41-927] Following properties on pin /logic_in_0/sys_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_sys_clk 
+WARNING: [BD 41-927] Following properties on pin /logic_in_0/ext_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ext_clk 
+WARNING: [BD 41-927] Following properties on pin /test_ram_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_sys_clk 
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block logic_in_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block test_ram_0 .
+Exporting to file D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Tue Jul 28 10:24:02 2020] Launched design_1_logic_in_0_0_synth_1, design_1_test_ram_0_0_synth_1, design_1_blk_mem_gen_0_0_synth_1...
+Run output will be captured here:
+design_1_logic_in_0_0_synth_1: D:/summer-camp/logic-analyse/hardware_input/hardware_input.runs/design_1_logic_in_0_0_synth_1/runme.log
+design_1_test_ram_0_0_synth_1: D:/summer-camp/logic-analyse/hardware_input/hardware_input.runs/design_1_test_ram_0_0_synth_1/runme.log
+design_1_blk_mem_gen_0_0_synth_1: D:/summer-camp/logic-analyse/hardware_input/hardware_input.runs/design_1_blk_mem_gen_0_0_synth_1/runme.log
+[Tue Jul 28 10:24:02 2020] Launched synth_1...
+Run output will be captured here: D:/summer-camp/logic-analyse/hardware_input/hardware_input.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 872.000 ; gain = 97.031
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/synth/func/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0.dcp' for cell 'design_1_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/ip/design_1_logic_in_0_0/design_1_logic_in_0_0.dcp' for cell 'design_1_i/logic_in_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/ip/design_1_test_ram_0_0/design_1_test_ram_0_0.dcp' for cell 'design_1_i/test_ram_0'
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1157.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 1328.512 ; gain = 408.621
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/synth/func/xsim/logic_intb_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/synth/func/xsim/logic_intb_func_synth.v
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/synth/func/xsim/logic_intb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0_intern_clk
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0_logic_in
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0_test_ram
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width__parameterized0
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0_blk_mem_gen_v8_4_2
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0_blk_mem_gen_v8_4_2_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sim_1/new/logic_intb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_intb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/synth/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot logic_intb_func_synth xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module unisims_ver.RAMB36E1(READ_WIDTH_A=18,READ_WI...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.design_1_logic_in_0_0_intern_clk
+Compiling module xil_defaultlib.design_1_logic_in_0_0_logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.design_1_test_ram_0_0_test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module unisims_ver.OBUF
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_func_synth
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/synth/func/xsim/xsim.dir/logic_intb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 28 10:27:45 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1328.512 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "logic_intb_func_synth -key {Post-Synthesis:sim_1:Functional:logic_intb} -tclbatch {logic_intb.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {D:/summer-camp/logic-analyse/hardware_input/logic_intb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+open_wave_config D:/summer-camp/logic-analyse/hardware_input/logic_intb_behav.wcfg
+WARNING: Simulation object /logic_intb/in_module/design_1_i/test_ram_0/inst/enb was not found in the design.
+source logic_intb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'logic_intb_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:38 ; elapsed = 00:00:31 . Memory (MB): peak = 1336.090 ; gain = 416.199
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1423.246 ; gain = 0.000
+open_bd_design {D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:module_ref:logic_in:1.0 - logic_in_0
+Adding cell -- xilinx.com:module_ref:test_ram:1.0 - test_ram_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramrst(undef) and /blk_mem_gen_0/rsta(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramrst(undef) and /blk_mem_gen_0/rstb(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramclk(undef) and /blk_mem_gen_0/clka(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /logic_in_0/bramclk(undef) and /blk_mem_gen_0/clkb(clk)
+Successfully read diagram <design_1> from BD file <D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1459.078 ; gain = 35.832
+update_module_reference design_1_logic_in_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ext_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'ext_clk': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'sys_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer-camp/logic-analyse/ip_repo/logic_input_1.0'.
+Upgrading 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_logic_in_0_0 from logic_in_v1_0 1.0 to logic_in_v1_0 1.0
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'auto'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'trig_i'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'trig_state'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_logic_in_0_0'. These changes may impact your design.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/rsta(rst) and /logic_in_0_upgraded_ipi/bramrst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/rstb(rst) and /logic_in_0_upgraded_ipi/bramrst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/clka(clk) and /logic_in_0_upgraded_ipi/bramclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/clkb(clk) and /logic_in_0_upgraded_ipi/bramclk(undef)
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_logic_in_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+make_bd_pins_external  [get_bd_pins logic_in_0/trig_i]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_cells logic_in_0]
+make_bd_intf_pins_external  [get_bd_cells logic_in_0]
+INFO: [BD 5-409] No interface pins to be made external for /logic_in_0
+endgroup
+set_property name trig_i [get_bd_ports trig_i_0]
+set_property name auto [get_bd_ports auto_0]
+save_bd_design
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+regenerate_bd_layout
+regenerate_bd_layout
+update_module_reference design_1_logic_in_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ext_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'ext_clk': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'sys_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer-camp/logic-analyse/ip_repo/logic_input_1.0'.
+Upgrading 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_logic_in_0_0 from logic_in_v1_0 1.0 to logic_in_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/rsta(rst) and /logic_in_0_upgraded_ipi/bramrst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/rstb(rst) and /logic_in_0_upgraded_ipi/bramrst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/clka(clk) and /logic_in_0_upgraded_ipi/bramclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/clkb(clk) and /logic_in_0_upgraded_ipi/bramclk(undef)
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+WARNING: [BD 41-927] Following properties on pin /test_ram_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_sys_clk 
+WARNING: [BD 41-927] Following properties on pin /logic_in_0/sys_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_sys_clk 
+WARNING: [BD 41-927] Following properties on pin /logic_in_0/ext_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ext_clk 
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+generate_target Simulation [get_files D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block logic_in_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block test_ram_0 .
+Exporting to file D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/sim_scripts -ip_user_files_dir D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files -ipstatic_source_dir D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/summer-camp/logic-analyse/hardware_input/hardware_input.cache/compile_simlib/modelsim} {questa=D:/summer-camp/logic-analyse/hardware_input/hardware_input.cache/compile_simlib/questa} {riviera=D:/summer-camp/logic-analyse/hardware_input/hardware_input.cache/compile_simlib/riviera} {activehdl=D:/summer-camp/logic-analyse/hardware_input/hardware_input.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/intern_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intern_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/logic_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/test_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_logic_in_0_0/sim/design_1_logic_in_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_test_ram_0_0/sim/design_1_test_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sim_1/new/logic_intb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_intb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot logic_intb_behav xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.intern_clk
+Compiling module xil_defaultlib.logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "logic_intb_behav -key {Behavioral:sim_1:Functional:logic_intb} -tclbatch {logic_intb.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {D:/summer-camp/logic-analyse/hardware_input/logic_intb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+open_wave_config D:/summer-camp/logic-analyse/hardware_input/logic_intb_behav.wcfg
+source logic_intb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module logic_intb.in_module.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'logic_intb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1574.637 ; gain = 1.012
+current_wave_config {logic_intb_behav.wcfg}
+logic_intb_behav.wcfg
+add_wave {{/logic_intb/auto}} 
+current_wave_config {logic_intb_behav.wcfg}
+logic_intb_behav.wcfg
+add_wave {{/logic_intb/trig_i}} 
+current_wave_config {logic_intb_behav.wcfg}
+logic_intb_behav.wcfg
+add_wave {{/logic_intb/in_module/design_1_i/trig_state_0}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/intern_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intern_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/logic_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/test_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_logic_in_0_0/sim/design_1_logic_in_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_test_ram_0_0/sim/design_1_test_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sim_1/new/logic_intb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_intb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot logic_intb_behav xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.intern_clk
+Compiling module xil_defaultlib.logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+Block Memory Generator module logic_intb.in_module.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1585.129 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/intern_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intern_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/logic_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/test_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_logic_in_0_0/sim/design_1_logic_in_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_test_ram_0_0/sim/design_1_test_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sim_1/new/logic_intb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_intb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot logic_intb_behav xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.intern_clk
+Compiling module xil_defaultlib.logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+Block Memory Generator module logic_intb.in_module.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1585.129 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/intern_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intern_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/logic_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/test_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_logic_in_0_0/sim/design_1_logic_in_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_test_ram_0_0/sim/design_1_test_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sim_1/new/logic_intb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_intb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot logic_intb_behav xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.intern_clk
+Compiling module xil_defaultlib.logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+Block Memory Generator module logic_intb.in_module.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1585.129 ; gain = 0.000
+save_wave_config {D:/summer-camp/logic-analyse/hardware_input/logic_intb_behav.wcfg}
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/intern_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intern_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/logic_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/test_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_logic_in_0_0/sim/design_1_logic_in_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_test_ram_0_0/sim/design_1_test_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sim_1/new/logic_intb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_intb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot logic_intb_behav xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.intern_clk
+Compiling module xil_defaultlib.logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+Block Memory Generator module logic_intb.in_module.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1586.848 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/intern_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intern_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/logic_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/test_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_logic_in_0_0/sim/design_1_logic_in_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_test_ram_0_0/sim/design_1_test_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sim_1/new/logic_intb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_intb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot logic_intb_behav xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.intern_clk
+Compiling module xil_defaultlib.logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+Block Memory Generator module logic_intb.in_module.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1587.281 ; gain = 0.000
+current_wave_config {logic_intb_behav.wcfg}
+D:/summer-camp/logic-analyse/hardware_input/logic_intb_behav.wcfg
+add_wave {{/logic_intb/in_module/design_1_i/logic_in_0/finish}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot logic_intb_behav xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+Block Memory Generator module logic_intb.in_module.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1589.809 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/intern_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intern_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/logic_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/test_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_logic_in_0_0/sim/design_1_logic_in_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_test_ram_0_0/sim/design_1_test_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sim_1/new/logic_intb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_intb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot logic_intb_behav xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.intern_clk
+Compiling module xil_defaultlib.logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+Block Memory Generator module logic_intb.in_module.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1589.809 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/intern_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intern_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/logic_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/test_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_logic_in_0_0/sim/design_1_logic_in_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_test_ram_0_0/sim/design_1_test_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sim_1/new/logic_intb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_intb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot logic_intb_behav xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.intern_clk
+Compiling module xil_defaultlib.logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+Block Memory Generator module logic_intb.in_module.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1589.809 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/intern_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intern_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/logic_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/test_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_logic_in_0_0/sim/design_1_logic_in_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_test_ram_0_0/sim/design_1_test_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sim_1/new/logic_intb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_intb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot logic_intb_behav xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.intern_clk
+Compiling module xil_defaultlib.logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+Block Memory Generator module logic_intb.in_module.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1589.809 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'logic_intb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj logic_intb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/intern_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intern_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/logic_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/test_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_logic_in_0_0/sim/design_1_logic_in_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_logic_in_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/ip/design_1_test_ram_0_0/sim/design_1_test_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_test_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sim_1/new/logic_intb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_intb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0db4d7bba2b49e09b5ad4740b309458 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot logic_intb_behav xil_defaultlib.logic_intb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.intern_clk
+Compiling module xil_defaultlib.logic_in
+Compiling module xil_defaultlib.design_1_logic_in_0_0
+Compiling module xil_defaultlib.test_ram
+Compiling module xil_defaultlib.design_1_test_ram_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.logic_intb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot logic_intb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+Block Memory Generator module logic_intb.in_module.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1593.891 ; gain = 0.000
+save_wave_config {D:/summer-camp/logic-analyse/hardware_input/logic_intb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+add_files -norecurse D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/new/trig.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_bd_design {D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd}
+update_module_reference design_1_test_ram_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer-camp/logic-analyse/ip_repo/logic_input_1.0'.
+Upgrading 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_test_ram_0_0 from test_ram_v1_0 1.0 to test_ram_v1_0 1.0
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+update_module_reference design_1_logic_in_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ext_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'ext_clk': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'sys_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer-camp/logic-analyse/ip_repo/logic_input_1.0'.
+Upgrading 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_logic_in_0_0 from logic_in_v1_0 1.0 to logic_in_v1_0 1.0
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'auto'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'trig_i'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'edge_trig_sel'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'trig_mode'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'trig_valid'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'trig_word'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_logic_in_0_0'. These changes may impact your design.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/rsta(rst) and /logic_in_0_upgraded_ipi/bramrst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/rstb(rst) and /logic_in_0_upgraded_ipi/bramrst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/clka(clk) and /logic_in_0_upgraded_ipi/bramclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/clkb(clk) and /logic_in_0_upgraded_ipi/bramclk(undef)
+CRITICAL WARNING: [BD 41-1167] The pin 'trig_i' is not found on the upgraded version of the cell '/logic_in_0'. Its connection to the net 'trig_i_0_1' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'auto' is not found on the upgraded version of the cell '/logic_in_0'. Its connection to the net 'auto_0_1' has been removed.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_logic_in_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+delete_bd_objs [get_bd_nets trig_i_0_1] [get_bd_ports trig_i]
+delete_bd_objs [get_bd_nets auto_0_1] [get_bd_ports auto]
+startgroup
+make_bd_pins_external  [get_bd_pins logic_in_0/trig_mode]
+endgroup
+set_property name trig_mode [get_bd_ports trig_mode_0]
+startgroup
+make_bd_pins_external  [get_bd_pins logic_in_0/trig_valid]
+endgroup
+set_property name trig_valid [get_bd_ports trig_valid_0]
+startgroup
+make_bd_pins_external  [get_bd_pins logic_in_0/trig_word]
+endgroup
+set_property name trig_word [get_bd_ports trig_word_0]
+startgroup
+make_bd_pins_external  [get_bd_pins logic_in_0/edge_trig_sel]
+endgroup
+set_property name edge_trig_sel [get_bd_ports edge_trig_sel_0]
+save_bd_design
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference design_1_logic_in_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ext_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'ext_clk': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'sys_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer-camp/logic-analyse/ip_repo/logic_input_1.0'.
+Upgrading 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_logic_in_0_0 from logic_in_v1_0 1.0 to logic_in_v1_0 1.0
+WARNING: [IP_Flow 19-4706] Upgraded port 'data' width 8 differs from original width 32
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_logic_in_0_0'. These changes may impact your design.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/rsta(rst) and /logic_in_0_upgraded_ipi/bramrst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/rstb(rst) and /logic_in_0_upgraded_ipi/bramrst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/clka(clk) and /logic_in_0_upgraded_ipi/bramclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/clkb(clk) and /logic_in_0_upgraded_ipi/bramclk(undef)
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_logic_in_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+delete_bd_objs [get_bd_nets data_0_1] [get_bd_ports data]
+startgroup
+make_bd_pins_external  [get_bd_pins logic_in_0/data]
+endgroup
+set_property name data [get_bd_ports data_0]
+save_bd_design
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+WARNING: [BD 41-927] Following properties on pin /test_ram_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_sys_clk 
+WARNING: [BD 41-927] Following properties on pin /logic_in_0/sys_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_sys_clk 
+WARNING: [BD 41-927] Following properties on pin /logic_in_0/ext_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ext_clk 
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+close_design
+update_module_reference design_1_logic_in_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ext_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'ext_clk': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'sys_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer-camp/logic-analyse/ip_repo/logic_input_1.0'.
+Upgrading 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_logic_in_0_0 from logic_in_v1_0 1.0 to logic_in_v1_0 1.0
+WARNING: [IP_Flow 19-4704] Upgraded port 'finish' out differs from original direction in
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_logic_in_0_0'. These changes may impact your design.
+ERROR: [BD 41-249] Net 'finish_0_1' already has a source port '/finish' connected to it; Another source port cannot be connected to this net.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_logic_in_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+ERROR: [Common 17-39] 'upgrade_ip' failed due to earlier errors.
+ERROR: [Common 17-39] 'upgrade_ip' failed due to earlier errors.
+delete_bd_objs [get_bd_nets finish_0_1] [get_bd_ports finish]
+connect_bd_net [get_bd_ports sys_clk] [get_bd_pins logic_in_0/sys_clk]
+connect_bd_net [get_bd_ports ext_clk] [get_bd_pins logic_in_0/ext_clk]
+connect_bd_net [get_bd_ports clk_sel] [get_bd_pins logic_in_0/clk_sel]
+connect_bd_net [get_bd_ports rst_n] [get_bd_pins logic_in_0/rst_n]
+connect_bd_net [get_bd_ports en] [get_bd_pins logic_in_0/en]
+report_ip_status -name ip_status 
+update_module_reference design_1_logic_in_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ext_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'ext_clk': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'sys_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer-camp/logic-analyse/ip_repo/logic_input_1.0'.
+Upgrading 'D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_logic_in_0_0 from logic_in_v1_0 1.0 to logic_in_v1_0 1.0
+Wrote  : <D:\summer-camp\logic-analyse\hardware_input\hardware_input.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/summer-camp/logic-analyse/hardware_input/hardware_input.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+report_ip_status -name ip_status 

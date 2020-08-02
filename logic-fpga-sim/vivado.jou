@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Aug  2 15:42:48 2020
+# Process ID: 17172
+# Current directory: F:/localgit/PYNQ-Logic-Analyse/logic-fpga-sim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15028 F:\localgit\PYNQ-Logic-Analyse\logic-fpga-sim\hardware_input.xpr
+# Log file: F:/localgit/PYNQ-Logic-Analyse/logic-fpga-sim/vivado.log
+# Journal file: F:/localgit/PYNQ-Logic-Analyse/logic-fpga-sim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/localgit/PYNQ-Logic-Analyse/logic-fpga-sim/hardware_input.xpr
+update_module_reference design_1_logic_in_0_0

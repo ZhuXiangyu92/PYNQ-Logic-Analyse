@@ -1,0 +1,84 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 1690 -defaultsOSRD
+preplace port ext_clk_0 -pg 1 -y 20 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 1850 -defaultsOSRD
+preplace portBus key0 -pg 1 -y 2620 -defaultsOSRD
+preplace portBus key1 -pg 1 -y 2320 -defaultsOSRD
+preplace portBus key2 -pg 1 -y 2780 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -y 2090 -defaultsOSRD
+preplace inst key0_input_ext_clk -pg 1 -lvl 3 -y 2540 -defaultsOSRD
+preplace inst en_1 -pg 1 -lvl 3 -y 240 -defaultsOSRD
+preplace inst xlconstant_data -pg 1 -lvl 2 -y 1760 -defaultsOSRD
+preplace inst rst_1 -pg 1 -lvl 3 -y 640 -defaultsOSRD
+preplace inst trig_valid_8 -pg 1 -lvl 3 -y 2100 -defaultsOSRD
+preplace inst key2_input_en -pg 1 -lvl 3 -y 2700 -defaultsOSRD
+preplace inst key1_input_clk_sel -pg 1 -lvl 3 -y 2400 -defaultsOSRD
+preplace inst bram_ctrl -pg 1 -lvl 3 -y 450 -defaultsOSRD
+preplace inst trig_word_8 -pg 1 -lvl 3 -y 2240 -defaultsOSRD
+preplace inst clkmode_3 -pg 1 -lvl 3 -y 780 -defaultsOSRD
+preplace inst depth_16 -pg 1 -lvl 3 -y 940 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 1320 -defaultsOSRD
+preplace inst clk_sel_1 -pg 1 -lvl 3 -y 80 -defaultsOSRD
+preplace inst logic_in -pg 1 -lvl 3 -y 1190 -defaultsOSRD
+preplace inst ext_clk -pg 1 -lvl 3 -y 1610 -defaultsOSRD
+preplace inst trig_state_1 -pg 1 -lvl 3 -y 1940 -defaultsOSRD
+preplace inst blk_mem_gen -pg 1 -lvl 4 -y 470 -defaultsOSRD
+preplace inst edge_trig_sel_3 -pg 1 -lvl 3 -y 1440 -defaultsOSRD
+preplace inst trig_mode_2 -pg 1 -lvl 3 -y 1770 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 1880 -defaultsOSRD
+preplace netloc ps7_0_axi_periph_M12_AXI 1 2 1 770
+preplace netloc processing_system7_0_DDR 1 1 4 NJ 1830 880J 1690 NJ 1690 NJ
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 790
+preplace netloc axi_gpio_depth_gpio_io_o 1 2 2 920 1020 1240
+preplace netloc ps7_0_axi_periph_M09_AXI 1 2 1 850
+preplace netloc logic_in_0_bramwea 1 3 1 1310
+preplace netloc axi_gpio_clkmode_gpio_io_o 1 2 2 890 860 1240
+preplace netloc ps7_0_axi_periph_M14_AXI 1 2 1 750
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 430
+preplace netloc gpio_io_i_0_1 1 0 4 NJ 2620 NJ 2620 NJ 2620 1240
+preplace netloc ps7_0_axi_periph_M07_AXI 1 2 1 860
+preplace netloc gpio_io_i_0_2 1 0 4 NJ 2320 NJ 2320 NJ 2320 1240
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 1990 430
+preplace netloc logic_in_0_bramclk 1 3 1 1290
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 770
+preplace netloc gpio_io_i_0_3 1 0 4 NJ 2780 NJ 2780 NJ 2780 1240
+preplace netloc axi_gpio_trig_valid_gpio_io_o 1 2 2 890 1860 1250
+preplace netloc logic_in_0_bramdata 1 3 1 1270
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 760
+preplace netloc logic_in_0_finish 1 3 1 1250
+preplace netloc axi_gpio_en_gpio_io_o 1 2 2 910 320 1310
+preplace netloc axi_gpio_trig_mode_gpio_io_o 1 2 2 910 1520 1250
+preplace netloc xlconstant_0_dout 1 2 1 870J
+preplace netloc axi_gpio_0_gpio_io_o 1 2 2 900 160 1310
+preplace netloc logic_in_0_bramrst 1 3 1 1300
+preplace netloc ps7_0_axi_periph_M11_AXI 1 2 1 820
+preplace netloc ps7_0_axi_periph_M08_AXI 1 2 1 790
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 1850 NJ 1850 NJ 1850 NJ
+preplace netloc ps7_0_axi_periph_M06_AXI 1 2 1 820
+preplace netloc logic_in_0_trig_state 1 3 1 1310
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 450 1820 810
+preplace netloc ext_clk_gpio_io_o 1 2 2 880 1530 1240
+preplace netloc axi_gpio_trig_sel_gpio_io_o 1 2 2 920 1360 1240
+preplace netloc axi_gpio_0_gpio_io_o2 1 2 2 900 2020 1240
+preplace netloc ps7_0_axi_periph_M05_AXI 1 2 1 830
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 840
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 1770 440 1840 800
+preplace netloc ps7_0_axi_periph_M10_AXI 1 2 1 780
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 750
+preplace netloc logic_in_0_bramen 1 3 1 1280
+preplace netloc ps7_0_axi_periph_M13_AXI 1 2 1 760
+preplace netloc logic_in_0_address 1 3 1 1260
+levelinfo -pg 1 0 230 600 1080 1410 1530 -top 0 -bot 2800
+"
+}
+{
+   "da_axi4_cnt":"16",
+   "da_board_cnt":"1",
+   "da_bram_cntlr_cnt":"1",
+   "da_clkrst_cnt":"18",
+   "da_ps7_cnt":"3"
+}
